@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "run-p build:**",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,5 +27,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "netlify-cli": "^2.68.5",
+    "netlify-lambda": "^2.0.1"
+  }
 }
